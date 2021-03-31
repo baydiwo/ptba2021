@@ -1,0 +1,26 @@
+{
+  "name": "ptba2021",
+  "version": "1.0.0",
+  "description": "ptba html template 2021",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baydiwo/ptba2021.git"
+  },
+  "keywords": [
+    "ptba"
+  ],
+  "author": "bayu adi wibowo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baydiwo/ptba2021/issues"
+  },
+  "homepage": "https://github.com/baydiwo/ptba2021#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
