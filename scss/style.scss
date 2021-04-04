@@ -335,3 +335,49 @@ position: absolute;
 .wrapper {
   overflow: hidden;
 }
+
+// custom menu
+.mega-menu {
+  .drop-down {
+    .grid-col-3 > ul {
+      border-left: 1px solid $dark-gray-bg;
+      border-right: 1px solid $dark-gray-bg;
+    }
+
+    li {
+      padding: 4px 16px;
+  
+      &:hover {
+        background: $theme-color;
+        border-left: 4px solid $yellow;
+        
+        > a {
+          color: $white;
+        } 
+      }
+  
+      a {
+        display: grid;
+        padding-left: 16px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        i.fa {
+          justify-self: end;
+        }
+      }
+    }
+  }
+}
+.dropdownright {
+  &.activeTrigger {
+    background: $theme-color;
+    border-left: 4px solid $yellow;
+    
+    > a {
+      color: $white;
+    }
+  }
+}
+
+// end of cutom menu

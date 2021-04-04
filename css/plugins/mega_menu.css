@@ -159,11 +159,11 @@
     @media screen and (max-width:991px) {
       .mega-menu .drop-down-multilevel { max-width: 100% !important; position: relative; left: 0; top: 0; padding: 10px; display: none; }
     }
-    .mega-menu .drop-down-multilevel li { margin: 0; padding: 0; display: block; float: left; border-radius: 0px;  /*border-bottom: 1px solid #f3f3f3;*/ width: 100%; position: relative; -webkit-transition: background 200ms ease; transition: background 200ms ease; z-index: 50; }
+    .mega-menu .drop-down-multilevel li { display: block; float: left; border-radius: 0px;  /*border-bottom: 1px solid #f3f3f3;*/ width: 100%; position: relative; -webkit-transition: background 200ms ease; transition: background 200ms ease; z-index: 50; }
     .mega-menu .drop-down-multilevel li:last-child { border-bottom: 0px; }
-    .mega-menu .drop-down-multilevel li:hover { background: #fafafa; }
-    .mega-menu .drop-down-multilevel li:hover > a { color: #001564; }
-    .mega-menu .drop-down-multilevel li:hover > a i.fa { color: #001564; }
+    /* .mega-menu .drop-down-multilevel li:hover { background: #fafafa; } */
+    /* .mega-menu .drop-down-multilevel li:hover > a { color: #001564; } */
+    /* .mega-menu .drop-down-multilevel li:hover > a i.fa { color: #001564; } */
     @media screen and (min-width:992px) {
       .mega-menu .drop-down-multilevel li.activeTrigger { background: #001564; }
       .mega-menu .drop-down-multilevel li.activeTrigger > a { color: #ffffff; }
@@ -203,7 +203,7 @@
       }
       .mega-menu .drop-down,
       .mega-menu .drop-down-tab-bar {  /*--------------------------------------------------------- GRID DROP DOWN */
-      position: absolute; left: auto; top: auto; right: auto; background: #ffffff; float: left; padding: 10px 20px; z-index: 999; display: block; cursor: default; overflow: hidden;  /*-------------------------------------------------------- 12 COLUMNS FLUID GRID WITH NESTED COLUMNS */ }
+      position: absolute; left: auto; top: auto; right: auto; background: #ffffff; float: left; padding: 0; z-index: 999; display: block; cursor: default; overflow: hidden;  /*-------------------------------------------------------- 12 COLUMNS FLUID GRID WITH NESTED COLUMNS */ }
       .mega-menu .drop-down *,
       .mega-menu .drop-down-tab-bar * { color: #323232; }
       @media screen and (min-width:992px) {
@@ -211,7 +211,7 @@
         .mega-menu .drop-down-tab-bar { background: rgba(255, 255, 255, 1); background-repeat: no-repeat; background-position: 120% 0; }
         .mega-menu .drop-down.menu-shop-bg,
         .mega-menu .drop-down-tab-bar { background: rgba(255, 255, 255, 1) url(../../images/objects/menu-shop-bg.jpg); background-repeat: no-repeat; background-position: right; }
-        .mega-menu .drop-down.menu-bg [class*="grid-col-"] { padding: 10px 10px 0; }
+        .mega-menu .drop-down.menu-bg [class*="grid-col-"] { padding: 0; }
         .mega-menu .rev-slider { background: #fff; padding: 7px 12px; }
         .mega-menu .rev-slider p { display: inline-block; padding: 0px 10px; margin-bottom: 0px !important; line-height: 0px !important; }
         .mega-menu .rev-slider a { display: inline-block; font-size: 13px !important; color: #01a9da; width: inherit !important; padding: 5px 0px; }
@@ -228,7 +228,7 @@
       .mega-menu .drop-down .grid-row,
       .mega-menu .drop-down-tab-bar .grid-row { margin: 0; padding: 0; min-height: 1px; width: 100%; float: left; clear: both; }
       .mega-menu .drop-down [class*="grid-col-"],
-      .mega-menu .drop-down-tab-bar [class*="grid-col-"] { margin: 0; float: left; padding: 10px; position: relative; }
+      .mega-menu .drop-down-tab-bar [class*="grid-col-"] { margin: 0; float: left; padding: 0; position: relative; }
       .mega-menu .drop-down .grid-col-1,
       .mega-menu .drop-down-tab-bar .grid-col-1 { width: 8.333333333333333%; }
       .mega-menu .drop-down .grid-col-2,
