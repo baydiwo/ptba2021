@@ -14911,8 +14911,6 @@ canvas {
     width: 33.333%; }
   .mega-menu .menu-links > li > a {
     padding: 0 10px; }
-  .mega-menu .drop-down-multilevel {
-    width: 200px; }
   .blockquote-section blockquote {
     font-size: 40px;
     line-height: 40px; }
@@ -18802,27 +18800,48 @@ canvas {
 .wrapper {
   overflow: hidden; }
 
-.mega-menu .drop-down .grid-col-3 > ul {
-  border-left: 1px solid #666666;
-  border-right: 1px solid #666666; }
-
-.mega-menu .drop-down li {
-  padding: 4px 16px; }
-  .mega-menu .drop-down li:hover {
-    background: #001564;
-    border-left: 4px solid #F6C545; }
-    .mega-menu .drop-down li:hover > a {
-      color: #ffffff; }
-  .mega-menu .drop-down li a {
-    display: grid;
-    padding-left: 16px;
-    align-items: center;
-    grid-template-columns: 1fr 1fr; }
-    .mega-menu .drop-down li a i.fa {
-      justify-self: end; }
+.mega-menu .drop-down {
+  height: 272px; }
+  .mega-menu .drop-down .grid-col-3 > ul {
+    position: relative; }
+    .mega-menu .drop-down .grid-col-3 > ul::before, .mega-menu .drop-down .grid-col-3 > ul::after {
+      content: "";
+      width: 1px;
+      background: rgba(0, 0, 0, 0.2);
+      height: 280px;
+      position: absolute;
+      top: 0; }
+    .mega-menu .drop-down .grid-col-3 > ul::before {
+      left: 0; }
+    .mega-menu .drop-down .grid-col-3 > ul::after {
+      right: 0; }
+  .mega-menu .drop-down li {
+    height: 34px;
+    padding: 0px;
+    display: flex;
+    align-items: center; }
+    .mega-menu .drop-down li:hover {
+      background: #001564;
+      border-left: 4px solid #F6C545; }
+      .mega-menu .drop-down li:hover > a, .mega-menu .drop-down li:hover i.fa {
+        color: #ffffff; }
+    .mega-menu .drop-down li a {
+      display: flex;
+      padding-left: 16px;
+      align-items: center; }
+      .mega-menu .drop-down li a i.fa {
+        margin-left: auto; }
+  .mega-menu .drop-down .drop-down-multilevel::after {
+    content: "";
+    width: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    height: 280px;
+    position: absolute; }
+  .mega-menu .drop-down .drop-down-multilevel::after {
+    right: 0; }
 
 .dropdownright.activeTrigger {
   background: #001564;
   border-left: 4px solid #F6C545; }
-  .dropdownright.activeTrigger > a {
+  .dropdownright.activeTrigger > a, .dropdownright.activeTrigger i.fa {
     color: #ffffff; }

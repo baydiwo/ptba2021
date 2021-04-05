@@ -99,7 +99,7 @@ var $window = $(window),
       if(l) pos = l;
       nav.megaMenu({
               // DESKTOP MODE SETTINGS
-              trigger             : 'click',        // show drop down using click or hover. options (hover) or (click)
+              trigger             : 'hover',        // show drop down using click or hover. options (hover) or (click)
               effect              : 'expand-top',   // drop down effects. options (fade), (scale), (expand-top), (expand-bottom), (expand-left), (expand-right)
               effect_speed        : 400,            // drop down show speed in milliseconds
               sibling             : true,           // hide the others showing drop downs if this option true. this option works on if the trigger option is "click". options (true) or (false)

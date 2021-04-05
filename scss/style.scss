@@ -339,32 +339,67 @@ position: absolute;
 // custom menu
 .mega-menu {
   .drop-down {
+    height: 272px;
+
     .grid-col-3 > ul {
-      border-left: 1px solid $dark-gray-bg;
-      border-right: 1px solid $dark-gray-bg;
+
+      position: relative;
+
+      &::before, &::after {
+        content: "";
+        width: 1px;
+        background: $black-20;
+        height: 280px;
+        position: absolute;
+        top:0;
+      }
+
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
+    
     }
 
     li {
-      padding: 4px 16px;
+      height: 34px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
   
       &:hover {
         background: $theme-color;
         border-left: 4px solid $yellow;
         
-        > a {
+        > a, i.fa {
           color: $white;
         } 
       }
   
       a {
-        display: grid;
+        display: flex;
         padding-left: 16px;
         align-items: center;
-        grid-template-columns: 1fr 1fr;
 
         i.fa {
-          justify-self: end;
+          margin-left: auto;
         }
+      }
+    }
+
+    .drop-down-multilevel {
+      &::after {
+        content: "";
+        width: 1px;
+        background: $black-20;
+        height: 280px;
+        position: absolute;
+      }
+
+      &::after {
+        right: 0;
       }
     }
   }
@@ -374,7 +409,7 @@ position: absolute;
     background: $theme-color;
     border-left: 4px solid $yellow;
     
-    > a {
+    > a , i.fa {
       color: $white;
     }
   }
