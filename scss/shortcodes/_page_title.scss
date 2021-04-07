@@ -8,6 +8,7 @@
 	.container {
 		height: 100%;
 		position: relative;
+		z-index: 1;
 	}
 	span {
 		text-transform: capitalize;
@@ -27,9 +28,9 @@
 		width: 60%;
 	}
 	.page-breadcrumb {
-		float: right;
+		float: left;
 		width: 40%;
-		text-align: right;
+		text-align: left;
 	}
 }
 .page-title.bg-overlay-black-60 {
@@ -197,3 +198,18 @@ ul.page-breadcrumb {
 	}
 }
 
+.page-title.wave {
+	&:after {
+		content: "";
+		background: url(../../images/ptba/bg-wave-header.svg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		right: 0;
+	}
+}
