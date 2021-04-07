@@ -18859,3 +18859,23 @@ canvas {
   border-left: 4px solid #F6C545; }
   .dropdownright.activeTrigger > a, .dropdownright.activeTrigger i.fa {
     color: #ffffff; }
+
+.list-category {
+  margin-bottom: 32px; }
+  .list-category ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    border-right: none;
+    border-left: none;
+    padding: 16px 0; }
+    .list-category ul li {
+      float: left;
+      padding-left: 16px; }
+      .list-category ul li a {
+        margin-right: 16px;
+        color: #626262; }
+        .list-category ul li a:hover {
+          color: #001564; }

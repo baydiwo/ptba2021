@@ -415,4 +415,35 @@ position: absolute;
   }
 }
 
+.list-category {
+  margin-bottom: 32px;
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    border-right: none;
+    border-left: none;
+    padding: 16px 0;
+
+    li {
+      
+      float: left;
+      padding-left: 16px;
+
+      a {
+        margin-right: 16px;
+        color: $text-dark-gray;
+
+        &:hover {
+          color: $theme-color;
+        }
+      }
+
+
+    }
+  }
+}
 // end of cutom menu
