@@ -1,8 +1,8 @@
 /*
 
-Template:  Webster - Responsive Multi-purpose HTML5 Template
-Author: potenzaglobalsolutions.com
-Design and Developed by: potenzaglobalsolutions.com
+Template:  Baydiwo
+Author: bayu.eighted@gmail.com
+Design and Developed by: bayu.eighted@gmail.com
 
 NOTE: This file contains all scripts for the actual Template.
 
