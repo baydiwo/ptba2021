@@ -1699,7 +1699,7 @@ select.input-sm {
 .table-1 tbody tr td {
   color: #7e8890;
   font-size: 14px;
-  padding: 12px 0;
+  padding: 12px;
   text-align: center; }
 
 .table-2.table thead {
@@ -9291,7 +9291,8 @@ header.one-page.light {
   height: 77px;
   display: inline-block; }
   .port-photo img {
-    width: 100%; }
+    width: 100%;
+    height: 70px; }
 
 .port-post {
   background: #f7f7f7;
@@ -9746,10 +9747,12 @@ a.blog-btn {
 
 .contact-form .section-field {
   position: relative;
-  width: 31.3%;
+  width: 48.5%;
   margin-right: 3%;
   float: left; }
-  .contact-form .section-field:nth-child(3) {
+  .contact-form .section-field:nth-child(2) {
+    margin-right: 0px; }
+  .contact-form .section-field:nth-child(4) {
     margin-right: 0px; }
   .contact-form .section-field:nth-child(6) {
     margin-right: 0px; }
