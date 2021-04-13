@@ -6299,6 +6299,10 @@ h3 {
 	}
 }
 
+.text-column-2 {
+  columns: auto 1;
+}
+
 }
 
 @media(max-width: 767px) {
@@ -7832,6 +7836,9 @@ h2 {
 	}
 }
 
+.text-column-2 {
+  columns: auto 1;
+}
 }
 
 
