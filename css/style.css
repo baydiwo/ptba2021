@@ -14866,6 +14866,17 @@ canvas {
 .page-title {
   max-height: 440px; }
 
+.grid-lightbox {
+  width: 100%;
+  height: 473px;
+  overflow: hidden; }
+
+.modal-title {
+  width: 100%; }
+
+.img-responsive {
+  width: 100%; }
+
 /*************************
        1700px
 *************************/
