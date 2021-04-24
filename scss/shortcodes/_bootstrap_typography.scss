@@ -385,6 +385,9 @@ select.input-sm {
 				font-size: $fs-14;
 				padding: 12px 0;
 				text-align: center;
+				&:first-child {
+					padding-left: 12px;
+				}
 			}
 		}
 	}

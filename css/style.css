@@ -1701,6 +1701,8 @@ select.input-sm {
   font-size: 14px;
   padding: 12px 0;
   text-align: center; }
+  .table-1 tbody tr td:first-child {
+    padding-left: 12px; }
 
 .table-2.table thead {
   background: transparent;
@@ -14874,16 +14876,17 @@ canvas {
 .list-category {
   margin-bottom: 32px; }
   .list-category ul {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     border: 1px dashed rgba(0, 0, 0, 0.3);
     border-right: none;
     border-left: none;
     padding: 16px 0;
-    list-style-type: none; }
+    list-style-type: none;
+    text-align: center; }
     .list-category ul li {
       position: relative;
-      float: left;
+      display: inherit;
       padding-left: 16px; }
       .list-category ul li::before {
         content: "•";
