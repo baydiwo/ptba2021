@@ -1,6 +1,6 @@
 
 .idx {
-  width: 540px;
+  max-width: 540px;
   height: auto;
   margin: 0 auto;
   background: #001564;
@@ -51,6 +51,37 @@
   background: white;
 }
 
+.list-system {
+  height: 70px;
+  margin-bottom: 30px;
+  ul {
+    li {
+      width: calc(25% - 8px);
+      display: inline-block;
+      float: left;
+      margin-right:8px;
+
+      &::last-child {
+        margin-right: 0;
+      }
+
+      .sys {
+        text-align: center;
+        background: white;
+        border-radius: 15px;
+        padding: 8px;
+        color: $theme-color;
+
+        .icon {
+          display: block;
+          margin: 0 auto;
+          height: 32px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
 .tri-pattern {
   background: url(../revolution/assets/demo/ptba/pattern.png) repeat center left;
 }
@@ -535,4 +566,9 @@ position: absolute;
   .feature-info {
     padding-left: 24px;
   }
+}
+
+.img-logo {
+  max-height: 70px;
+  height: 100%;
 }

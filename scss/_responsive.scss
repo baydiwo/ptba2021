@@ -516,6 +516,12 @@
 
 @media (min-width: 1200px) {
 .container { max-width: 1170px; }
+.hide-lg {
+	display: none;
+}
+.show-lg {
+	display: block;
+}
 }
 
 @media (max-width: 1200px) {
@@ -1230,6 +1236,13 @@ h4 {
 	.container {
 		max-width: auto;
 	}
+}
+
+.hide-md {
+	display: none;
+}
+.show-md {
+	display: block;
 }
 
 }
@@ -4012,6 +4025,13 @@ header.one-page.light {
 		padding: 0;
 	}
 }
+
+.hide-sm {
+	display: none !important;
+}
+.show-sm {
+	display: block !important;
+}
 }
 
 @media(max-width:767px) {
@@ -5341,6 +5361,10 @@ ul.page-breadcrumb {
 }
 
 
+.tp-thumb {
+  display: none !important;
+}
+
 }
 
 @media(max-width:600px) {
@@ -6303,11 +6327,26 @@ h3 {
   columns: auto 1;
 }
 
+.idx {
+	width: 100%;
+}
+
 }
 
 @media(max-width: 767px) {
 .container {
 	max-width: 100%;
+}
+.hide-sm {
+	display: none !important;
+}
+.show-sm {
+	display: block !important;
+}
+.sosmed {
+	&::before {
+		background: transparent;
+	}
 }
 
 }
@@ -7838,6 +7877,17 @@ h2 {
 
 .text-column-2 {
   columns: auto 1;
+}
+
+.hide-xs {
+	display: none;
+}
+.show-xs {
+	display: block;
+}
+
+.sosmed::before {
+	background: transparent;
 }
 }
 

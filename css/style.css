@@ -7030,7 +7030,6 @@ header.one-page.light {
     .mega-menu .drop-down-multilevel {
       top: 0; }
   .header.light .mega-menu {
-    min-height: 90px;
     min-height: 90px; }
   .header .search .search-btn {
     display: table-cell;
@@ -14534,7 +14533,7 @@ canvas {
   box-shadow: none; }
 
 .idx {
-  width: 540px;
+  max-width: 540px;
   height: auto;
   margin: 0 auto;
   background: #001564;
@@ -14579,6 +14578,28 @@ canvas {
 
 .list-system .box:hover {
   background: white; }
+
+.list-system {
+  height: 70px;
+  margin-bottom: 30px; }
+  .list-system ul li {
+    width: calc(25% - 8px);
+    display: inline-block;
+    float: left;
+    margin-right: 8px; }
+    .list-system ul li::last-child {
+      margin-right: 0; }
+    .list-system ul li .sys {
+      text-align: center;
+      background: white;
+      border-radius: 15px;
+      padding: 8px;
+      color: #001564; }
+      .list-system ul li .sys .icon {
+        display: block;
+        margin: 0 auto;
+        height: 32px;
+        margin-bottom: 8px; }
 
 .tri-pattern {
   background: url(../revolution/assets/demo/ptba/pattern.png) repeat center left; }
@@ -14961,6 +14982,10 @@ canvas {
   .feature-text-custom .feature-info {
     padding-left: 24px; }
 
+.img-logo {
+  max-height: 70px;
+  height: 100%; }
+
 /*************************
        1700px
 *************************/
@@ -15191,7 +15216,11 @@ canvas {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px; } }
+    max-width: 1170px; }
+  .hide-lg {
+    display: none; }
+  .show-lg {
+    display: block; } }
 
 @media (max-width: 1200px) {
   /*home2*/
@@ -15528,7 +15557,11 @@ canvas {
 
 @media only screen and (min-width: 992px) and (max-width: 1500px) {
   .vertical-header .container {
-    max-width: auto; } }
+    max-width: auto; }
+  .hide-md {
+    display: none; }
+  .show-md {
+    display: block; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .container {
@@ -16996,7 +17029,11 @@ canvas {
   .business-feature-top {
     padding: 30px; }
   .business-banner-04 p {
-    padding: 0; } }
+    padding: 0; }
+  .hide-sm {
+    display: none !important; }
+  .show-sm {
+    display: block !important; } }
 
 @media (max-width: 767px) {
   .xs-mt-0 {
@@ -17707,7 +17744,9 @@ canvas {
     font-size: 30px;
     line-height: 34px; }
   .business-banner-05 p {
-    padding: 0; } }
+    padding: 0; }
+  .tp-thumb {
+    display: none !important; } }
 
 @media (max-width: 600px) {
   h3 {
@@ -18196,11 +18235,19 @@ canvas {
       font-size: 30px;
       line-height: 30px; }
   .text-column-2 {
-    columns: auto 1; } }
+    columns: auto 1; }
+  .idx {
+    width: 100%; } }
 
 @media (max-width: 767px) {
   .container {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .hide-sm {
+    display: none !important; }
+  .show-sm {
+    display: block !important; }
+  .sosmed::before {
+    background: transparent; } }
 
 @media (max-width: 479px) {
   /*************************
@@ -18993,4 +19040,10 @@ canvas {
     margin-bottom: 0;
     font-size: 24px; }
   .text-column-2 {
-    columns: auto 1; } }
+    columns: auto 1; }
+  .hide-xs {
+    display: none; }
+  .show-xs {
+    display: block; }
+  .sosmed::before {
+    background: transparent; } }
