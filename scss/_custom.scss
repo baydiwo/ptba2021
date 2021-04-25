@@ -421,6 +421,7 @@ position: absolute;
 
 .list-category {
   margin-bottom: 32px;
+  text-align: center;
 
   ul {
     display: inline-block;
@@ -479,7 +480,8 @@ position: absolute;
 
 .grid-lightbox {
   width: 100%;
-  height: 473px;
+  max-height: 473px;
+  // height: 100%;
   overflow: hidden;
 }
 .modal-title {
