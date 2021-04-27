@@ -108,6 +108,7 @@
 section {
 	&:hover {
 		.title-effect {
+			color: $theme-color;
 			&::before {
 				transform: scale3d(1,1,1);
 			}
@@ -123,6 +124,7 @@ section {
 	}
 	&:focus {
 		.title-effect {
+			color: $theme-color;
 			&::before {
 				transform: scale3d(1,1,1);
 			}

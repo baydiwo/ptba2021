@@ -4046,20 +4046,22 @@ ul.page-breadcrumb {
     transition: transform 0.5s;
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
-section:hover .title-effect::before {
-  transform: scale3d(1, 1, 1); }
-
-section:hover .title-effect:nth-child(even) {
+section:hover .title-effect {
   color: #001564; }
+  section:hover .title-effect::before {
+    transform: scale3d(1, 1, 1); }
+  section:hover .title-effect:nth-child(even) {
+    color: #001564; }
 
 section:hover .title-effect.dark:nth-child(even) {
   color: #ffffff; }
 
-section:focus .title-effect::before {
-  transform: scale3d(1, 1, 1); }
-
-section:focus .title-effect:nth-child(even) {
+section:focus .title-effect {
   color: #001564; }
+  section:focus .title-effect::before {
+    transform: scale3d(1, 1, 1); }
+  section:focus .title-effect:nth-child(even) {
+    color: #001564; }
 
 section:focus .title-effect.dark:nth-child(even) {
   color: #ffffff; }
@@ -15004,6 +15006,23 @@ canvas {
   max-height: 70px;
   height: 100%; }
 
+.bg-bisnis {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left; }
+  .bg-bisnis.generik {
+    background-image: url(../images/ptba/icon-generik-bw.png); }
+    .bg-bisnis.generik:hover {
+      background-image: url(../images/ptba/icon-generik.png); }
+  .bg-bisnis.pembangkit {
+    background-image: url(../images/ptba/icon-pembangkit-bw.png); }
+    .bg-bisnis.pembangkit:hover {
+      background-image: url(../images/ptba/icon-pembangkit.png); }
+  .bg-bisnis.hilirisasi {
+    background-image: url(../images/ptba/icon-hilirisasi-bw.png); }
+    .bg-bisnis.hilirisasi:hover {
+      background-image: url(../images/ptba/icon-hilirisasi.png); }
+
 /*************************
        1700px
 *************************/
@@ -17051,7 +17070,9 @@ canvas {
   .hide-sm {
     display: none !important; }
   .show-sm {
-    display: block !important; } }
+    display: block !important; }
+  #logo_img {
+    height: 35px !important; } }
 
 @media (max-width: 767px) {
   .xs-mt-0 {
@@ -19062,4 +19083,14 @@ canvas {
   .show-xs {
     display: block; }
   .sosmed::before {
-    background: transparent; } }
+    background: transparent; }
+  .list-system ul li {
+    width: calc(17% - 8px); }
+  #logo_img {
+    height: 35px !important; }
+  .topbar-social ul li:first-child {
+    width: 100%; }
+    .topbar-social ul li:first-child .widget-search input {
+      width: 100% !important; }
+  .topbar-social ul li {
+    margin-top: 8px; } }

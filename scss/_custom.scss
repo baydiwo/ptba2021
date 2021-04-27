@@ -593,3 +593,40 @@ position: absolute;
   max-height: 70px;
   height: 100%;
 }
+
+.bg-bisnis {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+
+  &.generik {
+    background-image: url(../images/ptba/icon-generik-bw.png);
+
+    &:hover {
+      background-image: url(../images/ptba/icon-generik.png);
+    }
+  }
+  &.pembangkit {
+    background-image: url(../images/ptba/icon-pembangkit-bw.png);
+
+    &:hover {
+      background-image: url(../images/ptba/icon-pembangkit.png);
+    }
+  }
+  &.hilirisasi {
+    background-image: url(../images/ptba/icon-hilirisasi-bw.png);
+
+    &:hover {
+      background-image: url(../images/ptba/icon-hilirisasi.png);
+    }
+  }
+  
+}
+
+// section:hover .title-effect:nth-child(even), 
+// section:focus .title-effect:nth-child(even) 
+// { 
+//   color: red;
+// }
+// section:hover .title-effect::before, section:focus .title-effect::before {transform: scale3d(1,1,1); }
+// section:hover .title-effect:nth-child(even), section:focus .title-effect:nth-child(even) { color: #84ba3f; }

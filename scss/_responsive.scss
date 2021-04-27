@@ -4032,6 +4032,9 @@ header.one-page.light {
 .show-sm {
 	display: block !important;
 }
+#logo_img {
+	height: 35px !important;
+}
 }
 
 @media(max-width:767px) {
@@ -7888,6 +7891,26 @@ h2 {
 
 .sosmed::before {
 	background: transparent;
+}
+
+.list-system ul li {
+	width: calc(17% - 8px)
+}
+#logo_img {
+	height: 35px !important;
+}
+.topbar-social {
+	ul {
+		li:first-child {
+			width: 100%;
+			.widget-search input {
+				width: 100% !important;
+			}
+		}
+		li {
+			margin-top: 8px;
+		}
+	}
 }
 }
 
