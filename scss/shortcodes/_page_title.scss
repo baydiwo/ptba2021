@@ -200,7 +200,7 @@ ul.page-breadcrumb {
 
 .page-title.wave {
 	&:after {
-		content: "";
+		content: " ";
 		background: url(../images/ptba/bg-wave-header.svg);
 		background-repeat: no-repeat;
 		background-position: bottom;

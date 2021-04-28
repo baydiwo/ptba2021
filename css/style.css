@@ -3592,7 +3592,7 @@ ul.page-breadcrumb {
     left: 0;
     right: 0;
     content: "";
-    background: url(../../images/white-overlay.png);
+    background: url(../images/white-overlay.png);
     background-repeat: repeat-x;
     background-position: bottom; }
   .page-title.light-overlay h1 {
@@ -3619,13 +3619,13 @@ ul.page-breadcrumb {
     left: 0;
     right: 0;
     content: "";
-    background: url(../../images/dark-overlay.png);
+    background: url(../images/dark-overlay.png);
     background-repeat: repeat-x;
     background-position: bottom; }
 
 .page-title.wave:after {
-  content: "";
-  background: url(../../images/ptba/bg-wave-header.svg);
+  content: " ";
+  background: url(../images/ptba/bg-wave-header.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
