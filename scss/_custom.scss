@@ -594,10 +594,14 @@ position: absolute;
   height: 100%;
 }
 
-.bg-bisnis {
+.change-image {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
+
+  img {
+    visibility: hidden;
+  }
 
   &.generik {
     background-image: url(../images/ptba/icon-generik-bw.png);
@@ -607,17 +611,17 @@ position: absolute;
     }
   }
   &.pembangkit {
+    background-image: url(../images/ptba/icon-listrik-bw.png);
+
+    &:hover {
+      background-image: url(../images/ptba/icon-listrik.png);
+    }
+  }
+  &.hilirisasi {
     background-image: url(../images/ptba/icon-pembangkit-bw.png);
 
     &:hover {
       background-image: url(../images/ptba/icon-pembangkit.png);
-    }
-  }
-  &.hilirisasi {
-    background-image: url(../images/ptba/icon-hilirisasi-bw.png);
-
-    &:hover {
-      background-image: url(../images/ptba/icon-hilirisasi.png);
     }
   }
   

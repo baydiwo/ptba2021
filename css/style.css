@@ -15006,22 +15006,24 @@ canvas {
   max-height: 70px;
   height: 100%; }
 
-.bg-bisnis {
+.change-image {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left; }
-  .bg-bisnis.generik {
+  .change-image img {
+    visibility: hidden; }
+  .change-image.generik {
     background-image: url(../images/ptba/icon-generik-bw.png); }
-    .bg-bisnis.generik:hover {
+    .change-image.generik:hover {
       background-image: url(../images/ptba/icon-generik.png); }
-  .bg-bisnis.pembangkit {
+  .change-image.pembangkit {
+    background-image: url(../images/ptba/icon-listrik-bw.png); }
+    .change-image.pembangkit:hover {
+      background-image: url(../images/ptba/icon-listrik.png); }
+  .change-image.hilirisasi {
     background-image: url(../images/ptba/icon-pembangkit-bw.png); }
-    .bg-bisnis.pembangkit:hover {
+    .change-image.hilirisasi:hover {
       background-image: url(../images/ptba/icon-pembangkit.png); }
-  .bg-bisnis.hilirisasi {
-    background-image: url(../images/ptba/icon-hilirisasi-bw.png); }
-    .bg-bisnis.hilirisasi:hover {
-      background-image: url(../images/ptba/icon-hilirisasi.png); }
 
 /*************************
        1700px
