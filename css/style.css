@@ -15048,14 +15048,20 @@ canvas {
   position: absolute;
   left: 0; }
   #cf3 img.top {
-    animation-name: cf3FadeInOut;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-direction: normal;
     z-index: 1; }
   #cf3 img.bottom {
     top: 9px; }
+
+.step-1 {
+  animation: cf3FadeInOut 3s forwards; }
+
+.step-2 {
+  animation: cf3FadeInOut 3s forwards;
+  animation-delay: 3s; }
+
+.step-3 {
+  animation: cf3FadeInOut 3s forwards;
+  animation-delay: 6s; }
 
 /*************************
        1700px
