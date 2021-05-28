@@ -646,6 +646,10 @@ position: absolute;
   }
 }
 
+.anitrans {
+  transform: scale(1.1);
+}
+
 #cf3 {
   position: relative;
   width: 200px;
@@ -667,17 +671,17 @@ position: absolute;
     top: 9px;
   } 
 }
-.step-1 {
-  animation: cf3FadeInOut 3s forwards;
-}
-.step-2 {
-  animation: cf3FadeInOut 3s forwards;
-  animation-delay: 3s;
-}
-.step-3 {
-  animation: cf3FadeInOut 3s forwards;
-  animation-delay: 6s;
-}
+// .step-1 {
+//   animation: cf3FadeInOut 3s forwards;
+// }
+// .step-2 {
+//   animation: cf3FadeInOut 3s forwards;
+//   animation-delay: 3s;
+// }
+// .step-3 {
+//   animation: cf3FadeInOut 3s forwards;
+//   animation-delay: 6s;
+// }
 
 // section:hover .title-effect:nth-child(even), 
 // section:focus .title-effect:nth-child(even) 

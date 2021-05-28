@@ -15039,6 +15039,9 @@ canvas {
     opacity: 0;
     transform: scale(1.5); } }
 
+.anitrans {
+  transform: scale(1.1); }
+
 #cf3 {
   position: relative;
   width: 200px;
@@ -15051,17 +15054,6 @@ canvas {
     z-index: 1; }
   #cf3 img.bottom {
     top: 9px; }
-
-.step-1 {
-  animation: cf3FadeInOut 3s forwards; }
-
-.step-2 {
-  animation: cf3FadeInOut 3s forwards;
-  animation-delay: 3s; }
-
-.step-3 {
-  animation: cf3FadeInOut 3s forwards;
-  animation-delay: 6s; }
 
 /*************************
        1700px

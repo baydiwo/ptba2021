@@ -973,6 +973,33 @@ POTENZA.flickrfeed = function () {
     }
   };
 
+POTENZA.animBisnis = function () {
+  var start = function(){
+    $(".step-1").animate({ opacity: 0 }, 800, "linear", function(){
+      $(this).addClass('anitrans');
+      $('.step-2').animate({ opacity: 0 }, 800, "linear", function() {
+        $(this).addClass('anitrans');
+        $('.step-3').animate({ opacity: 0 }, 800, "linear", function() {
+          $(this).addClass('anitrans');
+          end();
+        });
+      });
+    });
+  
+  };
+  
+  var end = function(){
+    $(".step-1").animate({ opacity: 1 }, 800, "linear", function(){
+      $('.step-2').animate({ opacity: 1 }, 800, "linear", function() {
+        $('.step-3').animate({ opacity: 1 }, 800, "linear", start());
+      });
+    });
+  
+  };
+
+  start();
+} 
+
 
 /****************************************************
           javascript
@@ -1041,5 +1068,6 @@ var _arr  = {};
         POTENZA.instagramfeed(),
         POTENZA.flickrfeed(),
         POTENZA.mobileview();
+        POTENZA.animBisnis();
     });
 })(jQuery);
