@@ -25,13 +25,13 @@
 }
 .testimonial-avatar-custom {
 	position: relative;
-	left: 50%;
-	margin-left: -40px;
+	left: 0;
+	margin-left: 0;
 	top: 0;
-	width: 100px;
+	width: auto;
+	max-width: 100%;
 	height: 100px;
-	border: 4px solid $theme-color;
-	border-radius: 50%;
+	max-height:100px;
 	overflow: hidden;
 }
 .testimonial-info {
