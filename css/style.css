@@ -14831,13 +14831,16 @@ canvas {
 
 .mega-menu .drop-down {
   height: 272px; }
+  .mega-menu .drop-down.tata-kelola {
+    height: 408px;
+  }
   .mega-menu .drop-down .grid-col-3 > ul {
     position: relative; }
     .mega-menu .drop-down .grid-col-3 > ul::before, .mega-menu .drop-down .grid-col-3 > ul::after {
       content: "";
       width: 1px;
       background: rgba(0, 0, 0, 0.2);
-      height: 280px;
+      height: 100vh;
       position: absolute;
       top: 0; }
     .mega-menu .drop-down .grid-col-3 > ul::before {
