@@ -832,9 +832,10 @@ POTENZA.slickslider = function () {
               slidesToShow: 3,
               slidesToScroll: 1,
               asNavFor: '.slider-for',
-          dots: false,
-          centerMode: true,
-          focusOnSelect: true
+              dots: false,
+              centerMode: true,
+              focusOnSelect: true,
+              centerPadding: '0px',
         });
      });
    }

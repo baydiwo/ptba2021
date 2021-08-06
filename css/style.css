@@ -7118,8 +7118,10 @@ header.one-page.light {
     min-height: 90px; } }
 
 .rev-slider {
-  overflow: hidden;
-  position: relative; }
+  overflow: visible;
+  position: relative;
+  padding-bottom: 110px;
+  background: #001564; }
 
 .slotholder {
   filter: none !important; }
@@ -14831,16 +14833,13 @@ canvas {
 
 .mega-menu .drop-down {
   height: 272px; }
-  .mega-menu .drop-down.tata-kelola {
-    height: 408px;
-  }
   .mega-menu .drop-down .grid-col-3 > ul {
     position: relative; }
     .mega-menu .drop-down .grid-col-3 > ul::before, .mega-menu .drop-down .grid-col-3 > ul::after {
       content: "";
       width: 1px;
       background: rgba(0, 0, 0, 0.2);
-      height: 100vh;
+      height: 280px;
       position: absolute;
       top: 0; }
     .mega-menu .drop-down .grid-col-3 > ul::before {
@@ -15057,6 +15056,32 @@ canvas {
     z-index: 1; }
   #cf3 img.bottom {
     top: 9px; }
+
+.home-slider .detail-big-car-gallery .img-fluid {
+  width: 100%; }
+
+.home-slider .nav-item {
+  position: relative;
+  padding: 24px;
+  height: 110px;
+  width: 33%;
+  background-size: cover;
+  background-position: center; }
+  .home-slider .nav-item p {
+    color: #fff; }
+  .home-slider .nav-item a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F6C545; }
+  .home-slider .nav-item img {
+    position: absolute;
+    top: 0; }
+  .home-slider .nav-item.slick-current {
+    background-color: #001564;
+    background-image: none !important; }
 
 /*************************
        1700px
