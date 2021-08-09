@@ -7120,8 +7120,7 @@ header.one-page.light {
 .rev-slider {
   overflow: visible;
   position: relative;
-  padding-bottom: 110px;
-  background: #001564; }
+  background: rgba(0, 21, 100, 1); }
 
 .slotholder {
   filter: none !important; }
@@ -15082,6 +15081,16 @@ canvas {
   .home-slider .nav-item.slick-current {
     background-color: #001564;
     background-image: none !important; }
+
+.tp-revslider-slidesli .slotholder:first-child {
+  z-index: 10 !important; }
+
+.hero-caption-img img {
+  width: 100% !important;
+  height: 100% !important; }
+
+.rev_slider {
+  overflow: visible; }
 
 /*************************
        1700px

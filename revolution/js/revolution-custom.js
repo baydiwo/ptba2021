@@ -24,48 +24,105 @@ NOTE: This file includes all revolution slider scripts.
             sliderType:"standard",
             sliderLayout:"fullwidth",
             dottedOverlay:"none",
-            delay:9000,
+            delay:6000,
+            // navigation: {
+            //   keyboardNavigation:"off",
+            //   keyboard_direction: "horizontal",
+            //   mouseScrollNavigation:"off",
+            //   mouseScrollReverse:"default",
+            //   onHoverStop:"off",
+            //   touch:{
+            //     touchenabled:"on",
+            //     touchOnDesktop:"off",
+            //     swipe_threshold: 75,
+            //     swipe_min_touches: 1,
+            //     swipe_direction: "horizontal",
+            //     drag_block_vertical: false
+            //   }
+            //   ,
+            //   arrows: {
+            //     style:"zeus",
+            //     enable:true,
+            //     hide_onmobile:true,
+            //     hide_under:767,
+            //     hide_onleave:true,
+            //     hide_delay:200,
+            //     hide_delay_mobile:0,
+            //     tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+            //     left: {
+            //       h_align:"left",
+            //       v_align:"center",
+            //       h_offset:20,
+            //       v_offset:0
+            //     },
+            //     right: {
+            //       h_align:"right",
+            //       v_align:"center",
+            //       h_offset:20,
+            //       v_offset:0
+            //     }
+            //   }
+            // },
             navigation: {
-              keyboardNavigation:"off",
-              keyboard_direction: "horizontal",
-              mouseScrollNavigation:"off",
-                             mouseScrollReverse:"default",
-              onHoverStop:"off",
-              touch:{
-                touchenabled:"on",
-                touchOnDesktop:"off",
-                swipe_threshold: 75,
-                swipe_min_touches: 1,
-                swipe_direction: "horizontal",
-                drag_block_vertical: false
-              }
-              ,
-              arrows: {
-                style:"zeus",
-                enable:true,
-                hide_onmobile:true,
-                hide_under:767,
-                hide_onleave:true,
-                hide_delay:200,
-                hide_delay_mobile:0,
-                tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-                left: {
-                  h_align:"left",
-                  v_align:"center",
-                  h_offset:20,
-                                    v_offset:0
-                },
-                right: {
-                  h_align:"right",
-                  v_align:"center",
-                  h_offset:20,
-                                    v_offset:0
-                }
-              }
-            },
-            visibilityLevels:[1240,1024,778,480],
-            gridwidth:1240,
-            gridheight:900,
+							keyboardNavigation: "off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation: "off",
+							mouseScrollReverse: "default",
+							onHoverStop: "off",
+							arrows: {
+								style: "metis",
+								enable: false,
+								hide_onmobile: true,
+								hide_under: 768,
+                hide_over: 1000,
+								hide_onleave: false,
+								tmp: '',
+								left: {
+									h_align: "left",
+									v_align: "center",
+									h_offset: 0,
+									v_offset: 0
+								},
+								right: {
+									h_align: "right",
+									v_align: "center",
+									h_offset: 0,
+									v_offset: 0
+								}
+							},
+							thumbnails: {
+								style: "erinyen",
+								enable: true,
+								width: 450,
+								height: 110,
+								min_width: 200,
+                min_height: 110,
+								wrapper_padding: 0,
+								wrapper_color: "rgba(255,255,255,0.05)",
+								tmp: '<span class="tp-thumb-over black"></span><span class="tp-thumb-image"></span><span class="tp-thumb-title white">{{title}}</span>',
+								visibleAmount: 9,
+								hide_onmobile: true,
+								hide_onleave: false,
+								direction: "horizontal",
+								span: true,
+								position: "outer-bottom",
+								space: 0,
+								h_align: "center",
+								v_align: "bottom",
+								h_offset: 0,
+								v_offset: -110
+							},
+							touch: {
+								touchenabled: 'on',
+								swipe_threshold: 75,
+								swipe_min_touches: 1,
+								swipe_direction: 'horizontal',
+								drag_block_vertical: true
+							}
+						},
+            visibilityLevels:[1440,1024,778,480],
+            gridwidth:1900,
+            gridheight:850,
             lazyType:"none",
             shadow:0,
             spinner:"spinner2",

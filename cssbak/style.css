@@ -2193,7 +2193,7 @@ img.bottom-img { top: 0; }
   left: 0;
 }
 .tp-thumb-over.black, .tp-thumb.selected .tp-thumb-over.black, .tp-thumb-over:hover{
-  background: rgba(0, 0, 0, .5);
+  background: rgba(255, 255, 255, .5);
 }
 .tp-thumb-title.white {
   color: white;
@@ -2201,7 +2201,7 @@ img.bottom-img { top: 0; }
   font-family:Montserrat;
 }
 .erinyen .tp-thumb.selected .tp-thumb-over, .erinyen .tp-thumb:hover .tp-thumb-over {
-  background: rgba(0, 0, 0, 1); 
+  background: rgba(0, 21, 100, 1); 
   border-bottom: solid 4px #343D8A;
 }
 .erinyen .tp-thumb.selected .tp-thumb-title, .erinyen .tp-thumb:hover .tp-thumb-title {

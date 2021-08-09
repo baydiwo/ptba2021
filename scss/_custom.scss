@@ -789,3 +789,19 @@ position: absolute;
     }
   }
 }
+
+.tp-revslider-slidesli {
+  .slotholder:first-child {
+    z-index: 10 !important;
+  }
+}
+.hero-caption-img {
+  img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.rev_slider {
+  overflow:visible;
+}
