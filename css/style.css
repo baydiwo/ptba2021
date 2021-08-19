@@ -7120,7 +7120,6 @@ header.one-page.light {
 .rev-slider {
   overflow: visible;
   position: relative;
-  padding-bottom: 110px;
   background: #001564; }
 
 .slotholder {
@@ -19169,4 +19168,9 @@ canvas {
     .topbar-social ul li:first-child .widget-search input {
       width: 100% !important; }
   .topbar-social ul li {
-    margin-top: 8px; } }
+    margin-top: 8px; }
+  .erinyen .tp-thumb-title {
+    font-size: 9px;
+    line-height: normal;
+    padding: 8px;
+    font-weight: 400; } }
