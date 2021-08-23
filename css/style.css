@@ -11748,8 +11748,7 @@ img.logo-small {
   margin-top: -6px; }
 
 .footer-useful-link ul li {
-  list-style: none;
-  margin-bottom: 12px; }
+  list-style: none; }
   .footer-useful-link ul li:last-child {
     margin-bottom: 0; }
   .footer-useful-link ul li a {
@@ -19175,4 +19174,6 @@ canvas {
     padding: 8px;
     font-weight: 400; }
   .col-xs-6 {
-    width: 50%; } }
+    width: 50%; }
+  .ig {
+    height: auto; } }
