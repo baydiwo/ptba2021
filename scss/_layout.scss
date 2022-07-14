@@ -4031,19 +4031,24 @@ img.logo-small {
   }
 }
 .footer.black-bg {
-  background: #1a1a1a;
   p {
-    color: rgba(255,255,255,0.5);
+    color: $white;
+    line-height: $l-height-24;
+    font-weight: 300;
   }
   .social-icons {
     li {
       a {
-        color: rgba(255,255,255,0.5);
+        color:$white;
         &:hover {
-          color: rgba(255,255,255,1) !important;
+          color: $theme-color !important;
         }
       }
     }
+  }
+
+  hr {
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
 }
 .footer {
@@ -4051,7 +4056,7 @@ img.logo-small {
     font-size: $fs-14;
   }
   h6 {
-    font-size: $fs-14;
+    font-size: $fs-24;
   }
   a {
     font-size: $fs-14;
@@ -4186,14 +4191,14 @@ img.logo-small {
   li {
     font-size: $fs-14;
     margin-bottom: 15px;
-    color: rgba(255,255,255,0.5);
+    color: $white;
     list-style: none;
     a {
-      color: rgba(255,255,255,0.5);
+      color: $white;
     }
   }
   i {
-    color: rgba(255,255,255,0.5);
+    color: $white;
     padding-right: 5px;
     float: left;
     display: table-cell;
@@ -4203,7 +4208,7 @@ img.logo-small {
   }
   p {
     display: table;
-    color: rgba(255,255,255,0.5);
+    color: $white;
     margin-bottom: 0px;
   }
 }
@@ -4237,11 +4242,12 @@ img.logo-small {
         margin-bottom: 0;
       }
       a {
-        color: rgba(255,255,255,0.5);
+        color: $white;
         font-size: $fs-14;
         vertical-align: top;
+        font-weight: 300;
         display: block;
-        line-height: 26px;
+        line-height: 32px;
         &:hover {
           color: $theme-color;
         }

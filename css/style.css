@@ -11611,20 +11611,24 @@ img.logo-small {
     z-index: -1;
     background: url(../images/construction/bg/gradient-overlay1.png) repeat-y left 0; }
 
-.footer.black-bg {
-  background: #1a1a1a; }
-  .footer.black-bg p {
-    color: rgba(255, 255, 255, 0.5); }
-  .footer.black-bg .social-icons li a {
-    color: rgba(255, 255, 255, 0.5); }
-    .footer.black-bg .social-icons li a:hover {
-      color: white !important; }
+.footer.black-bg p {
+  color: #ffffff;
+  line-height: 24px;
+  font-weight: 300; }
+
+.footer.black-bg .social-icons li a {
+  color: #ffffff; }
+  .footer.black-bg .social-icons li a:hover {
+    color: #009444 !important; }
+
+.footer.black-bg hr {
+  border: 1px solid rgba(255, 255, 255, 0.5); }
 
 .footer p {
   font-size: 14px; }
 
 .footer h6 {
-  font-size: 14px; }
+  font-size: 24px; }
 
 .footer a {
   font-size: 14px; }
@@ -11717,13 +11721,13 @@ img.logo-small {
 .addresss-info li {
   font-size: 14px;
   margin-bottom: 15px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
   list-style: none; }
   .addresss-info li a {
-    color: rgba(255, 255, 255, 0.5); }
+    color: #ffffff; }
 
 .addresss-info i {
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
   padding-right: 5px;
   float: left;
   display: table-cell;
@@ -11733,7 +11737,7 @@ img.logo-small {
 
 .addresss-info p {
   display: table;
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
   margin-bottom: 0px; }
 
 .addresss-info.text-black li {
@@ -11757,11 +11761,12 @@ img.logo-small {
   .footer-useful-link ul li:last-child {
     margin-bottom: 0; }
   .footer-useful-link ul li a {
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
     font-size: 14px;
     vertical-align: top;
+    font-weight: 300;
     display: block;
-    line-height: 26px; }
+    line-height: 32px; }
     .footer-useful-link ul li a:hover {
       color: #009444; }
 
@@ -14666,34 +14671,24 @@ canvas {
 
 .p-list ul li {
   width: 100%;
-  border-bottom: 1px solid #363636;
-  padding: 16px 0; }
-
-.p-list ul li:first-child .date {
-  width: 100%; }
+  border-bottom: 1px solid #ffffff;
+  padding: 15px 0; }
 
 .p-list ul li p.date {
-  width: 80px; }
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 8px; }
 
-.p-list ul li p {
-  display: inline;
-  color: #363636; }
-
-.sosmed {
-  background: #dedede;
-  position: relative; }
-
-.sosmed::before {
-  content: "";
-  background: #f7f7f7;
-  width: calc(50vw - 8px);
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-.ig {
-  height: 590px; }
+.p-list ul li h3 {
+  display: block;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px; }
 
 .text-blue {
   color: #001564; }
@@ -15223,6 +15218,33 @@ canvas {
   text-transform: capitalize; }
   .btn-2022:hover {
     background: #d8a400; }
+
+.jarallax {
+  position: relative;
+  z-index: 0; }
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.social-info .section-title {
+  margin-bottom: 15px; }
+  .social-info .section-title h6 {
+    justify-content: start;
+    color: #ffffff; }
+
+.footer .logo-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+  isolation: isolate; }
 
 /*************************
        1700px

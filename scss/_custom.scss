@@ -153,37 +153,24 @@
 }
 .p-list ul li {
   width: 100%;
-  border-bottom: 1px solid #363636;
-  padding: 16px 0;
-}
-.p-list ul li:first-child .date {
-  width: 100%;
+  border-bottom: 1px solid $white;
+  padding: 15px 0;
 }
 .p-list ul li p.date {
-  width: 80px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $white;
+  margin-bottom: 8px;
 }
-.p-list ul li p {
-  display: inline;
-  color: #363636;
-}
-
-.sosmed {
-  background: #dedede;
-  position: relative;
-}
-
-.sosmed::before {
-  content: "";
-  background: #f7f7f7;
-  width: calc(50vw - 8px);
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.ig {
-  height: 590px;
+.p-list ul li h3 {
+  display: block;
+  color: $white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
 }
 .text-blue {
   color: #001564;
@@ -963,5 +950,45 @@
 
   &:hover {
     background: darken($color: #FFC40C, $amount: 10);
+  }
+}
+
+.social-info {
+  // background-image: url(../images/ptba/bg-section-4.jpg);
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.social-info {
+  .section-title {
+    margin-bottom: 15px;
+
+    h6 {
+      justify-content: start;
+      color: $white;
+    }
+  }
+}
+
+.footer {
+  .logo-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    isolation: isolate;
   }
 }
