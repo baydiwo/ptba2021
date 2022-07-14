@@ -16,8 +16,7 @@
    }
  }
 .topbar {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 14px 0;
+  padding: 20px 0;
   ul {
     li {
       display: inline-block;
@@ -84,9 +83,9 @@
     >li {
       >a {
         text-transform: uppercase;
-        font-size: $fs-14;
-        font-weight: $fw-5;
-        line-height: $l-height-20;
+        font-size: $fs-16;
+        font-weight: $fw-7;
+        line-height: $l-height-24;
       }
     }
     >li.active {
@@ -193,9 +192,10 @@
     }
   }
   .menu-logo {
-    padding: 25px 0 25px;
+    padding: 25px;
     img {
-      height: 40px;
+      height: 51px;
+      width: auto;
     }
   }
   .drop-down-multilevel.right-menu {
@@ -499,26 +499,30 @@
   }
 }
 .header.light {
-  background: $white;
-  position: relative;
+  background: transparent;
+  position: absolute;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
   z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   .topbar {
     ul {
       li {
-        color: $black;
+        color: $white;
         a {
-          color: $black;
+          color: $white;
         }
       }
     }
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid $white;
   }
   .mega-menu {
     .menu-links {
       >li {
         >a {
-          color: $black;
+          color: $white;
           &:hover {
             color: $theme-color;
           }
@@ -1590,6 +1594,7 @@ header.one-page.light {
       }
       .menu-bar {
         height: 100%;
+        padding-right: 27px;
         >ul {
           display: table !important;
           height: 100%;
