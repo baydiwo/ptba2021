@@ -826,6 +826,43 @@
   overflow: visible;
 }
 
+.mini-index {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: $fs-20;
+  background: $white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  .bg-green {
+    background-color: $theme-color;
+    color: $white;
+    padding:20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+  .index-text {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #383838;
+
+    div {
+      font-size: $fs-16;
+      margin-left: 4px;
+    }
+  }
+}
+
 .bg-green-light {
   background: rgba(141, 198, 63, 0.1);
 }

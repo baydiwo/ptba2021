@@ -1761,80 +1761,8 @@ h5 {
 	position: relative;
 	background: $black;
 }
-.mega-menu {
-	min-height: 60px;
-	.menu-logo {
-		>li {
-			>a {
-				padding: 0;
-			}
-		}
-		padding: 10px 0;
-		img {
-			height: 30px;
-			margin: 5px 0;
-		}
-		img.logo-big {
-			height: 36px;
-		}
-	}
-	.menu-links {
-		overflow: auto;
-		padding: 10px;
-		>li.active {
-			.drop-down-multilevel {
-				a {
-					&:hover {
-						color: $black;
-					}
-				}
-			}
-		}
-		>li {
-			>a {
-				line-height: normal;
-			}
-		}
-	}
-	.drop-down-multilevel {
-		li {
-			&:hover {
-				>a {
-					i.fa {
-						color: $black;
-					}
-				}
-			}
-		}
-		a {
-			display: block;
-			padding: 10px 20px;
-		}
-		border-top: 0px !important;
-		width: inherit;
-		padding: 0;
-	}
-	.mobileTriggerButton {
-		z-index: 1;
-	}
-	.drop-down {
-		border-top: 0px !important;
-		padding: 0;
-	}
-	.drop-down-tab-bar {
-		border-top: 0px !important;
-		padding: 0;
-	}
-	>section.menu-list-items {
-		height: 60px !important;
-	}
-	.menu-mobile-collapse-trigger {
-		height: 40px;
-		top: 50%;
-		transform: translateY(-50%);
-		z-index: 9999;
-	}
-}
+.header.light .mega-menu .menu-links > li > a {color:$black}
+.mega-menu .menu-logo {padding:0}
 .search-cart {
 	span.icon {
 		line-height: $l-height-50;
@@ -1884,13 +1812,13 @@ h5 {
 		}
 		.menu-mobile-collapse-trigger {
 			&:before {
-				background: $black;
+				background: $white;
 			}
 			&:after {
-				background: $black;
+				background: $white;
 			}
 			span {
-				background: $black;
+				background: $white;
 			}
 		}
 		.menu-logo {
@@ -1949,13 +1877,13 @@ h5 {
 	.mega-menu {
 		.menu-mobile-collapse-trigger {
 			&:before {
-				background: $black;
+				background: $white;
 			}
 			&:after {
-				background: $black;
+				background: $white;
 			}
 			span {
-				background: $black;
+				background: $white;
 			}
 		}
 	}
@@ -7926,6 +7854,36 @@ h2 {
 
 .ig {
 	height: auto;
+}
+
+.mini-index {
+	bottom: -20px;
+	right:0;
+	left:0;
+	width: 100%;	
+	height: auto;
+	font-size: $fs-16;
+	max-height: 64px;
+	border-radius: 0;
+
+	.index-text {
+		font-size: $fs-14;
+		flex-direction: column;
+		width: 100%;
+
+		div {
+			font-size: $fs-12;
+		}
+	}
+}
+.home-news-list {
+	padding-left: 0;
+}
+.footer .logo-brand {
+	gap:10px;
+	img {
+		height: 40px;
+	}
 }
 
 }

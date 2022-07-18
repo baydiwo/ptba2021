@@ -82,10 +82,10 @@
     float: left;
     >li {
       >a {
-        text-transform: uppercase;
-        font-size: $fs-16;
-        font-weight: $fw-7;
-        line-height: $l-height-24;
+        text-transform: capitalize;
+        font-size: $fs-14;
+        font-weight: $fw-5;
+        line-height: $l-height-20;
       }
     }
     >li.active {
@@ -192,10 +192,9 @@
     }
   }
   .menu-logo {
-    padding: 25px;
+    padding: 25px 0 25px;
     img {
-      height: 51px;
-      width: auto;
+      height: 40px;
     }
   }
   .drop-down-multilevel.right-menu {
@@ -1594,7 +1593,6 @@ header.one-page.light {
       }
       .menu-bar {
         height: 100%;
-        padding-right: 27px;
         >ul {
           display: table !important;
           height: 100%;
@@ -1631,7 +1629,7 @@ header.one-page.light {
       top: 100%;
     }
     .drop-down-multilevel {
-      top: 0;
+      top: 100%;
     }
   }
   .header.light {
