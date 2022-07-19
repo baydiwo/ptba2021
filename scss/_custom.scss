@@ -446,9 +446,6 @@
   ul {
     display: inline-block;
     justify-content: center;
-    border: 1px dashed rgba(0, 0, 0, 0.3);
-    border-right: none;
-    border-left: none;
     padding: 16px 0;
     list-style-type: none;
     text-align: center;
@@ -456,23 +453,30 @@
     li {
       position: relative;
       display: inherit;
-      padding-left: 16px;
-
-      &::before {
-        content: "•";
-        margin-left: 0;
-        position: absolute;
-        top: 9px;
-        left: 10px;
-      }
+      padding:0 0 10px;
+      margin: 0 15px 0;
+      cursor: pointer;
 
       a {
-        margin-right: 16px;
-        color: $text-dark-gray;
+        color: $theme-blue;
         display: block;
+        font-weight: 700;
+        font-size: $fs-18;
+        padding: 0;
+        position: relative;
 
         &:hover {
-          color: $theme-color;
+          color: $theme-yellow;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left:0;
+          width: 100%;
+          height: 2px;
+          background-color: $theme-blue;
         }
       }
     }
@@ -491,10 +495,6 @@
   p {
     color: white;
   }
-}
-
-.page-title {
-  max-height: 440px;
 }
 
 .grid-lightbox {
@@ -823,7 +823,24 @@
 }
 
 .rev_slider {
-  overflow: visible;
+  overflow: hidden;
+}
+
+.hermes .tp-bullet {
+  background-color: $white;
+  border: 1px solid transparent;
+  box-shadow: none;
+  width: 14px;
+  height: 14px;
+
+  &.selected::after {
+    background-color: $theme-color;
+    border: 1px solid white;
+    border-radius: 100%;
+  }
+  &:hover {
+    background-color: $white;
+  }
 }
 
 .mini-index {

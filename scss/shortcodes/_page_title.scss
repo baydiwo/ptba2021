@@ -1,14 +1,22 @@
 
 
-.page-title {
-	display: block;
-	padding-top: 250px;
-	padding-bottom: 100px;
+.page-title, .page-title-2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	// padding-top: 250px;
+	// padding-bottom: 100px;
 	position: relative;
+	height: 440px;
 	.container {
 		height: 100%;
 		position: relative;
 		z-index: 1;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 	}
 	span {
 		text-transform: capitalize;
@@ -17,6 +25,7 @@
 		text-transform: capitalize;
 		color: $white;
 		font-weight: $fw-6;
+		font-size: $fs-54;
 	}
 	p {
 		font-size: $fs-18;
@@ -25,7 +34,9 @@
 	}
 	.page-title-name {
 		display: inline-block;
-		width: 60%;
+		width: 100%;
+		text-align: center;
+		
 	}
 	.page-breadcrumb {
 		float: left;
@@ -33,35 +44,85 @@
 		text-align: left;
 	}
 }
+.page-title-2 {
+	.container {
+		justify-content: start;
+	}
+}
 .page-title.bg-overlay-black-60 {
 	&:before {
 		z-index: 0;
 	}
 }
-ul.page-breadcrumb {
+ul.page-breadcrumb, ul.page-breadcrumb-2 {
+	width: 100%;
+	background: $theme-blue;
+	padding: 15px 0;
+	text-align: center;
 	li {
 		span {
 			color: $white;
-			font-size: 14px;
+			font-size: $fs-18;
 			text-transform: capitalize;
 		}
 		color: $white;
 		display: inline-block;
 		list-style: none;
 		i {
-			font-size: 14px;
+			font-size: $fs-18;
 			padding: 0 7px;
 		}
 		a {
 			color: $white;
-			font-size: 14px;
+			font-size: $fs-18;
 			text-transform: capitalize;
 			&:hover {
 				color: $theme-color;
 			}
 		}
+		&:last-child {
+			span {
+				color:$theme-yellow;
+			}
+		}
 	}
-	padding-top: 30px;
+}
+ul.page-breadcrumb-2 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	width: auto;
+	padding: 20px 45px;
+	background: $white;
+
+	li {
+		position: relative;
+		a {
+			color: $text-black;
+			font-weight: 700;
+		}
+		&:last-child {
+			span {
+				color:$theme-blue;
+				font-weight: 700;
+			}
+		}
+
+		& + li {
+			padding-left: 20px;
+			&:before {
+				top: 5px;
+				left: 8px;
+				padding: 0;
+				width: 2px;
+				content: "";
+				height: 18px;
+				position: absolute;
+				background-color: #121e2d;
+			}
+		}
+	}
 }
 .page-title.gray-bg {
 	h1 {
