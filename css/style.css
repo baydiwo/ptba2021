@@ -6382,7 +6382,7 @@ section:nth-child(odd) .title-effect.dark::before {
     .header.light .search-cart i.icon:hover {
       color: #009444; }
   .header.light .mega-menu.desktopTopFixed .menu-list-items {
-    background: #12326F; }
+    background: #0E0E0E; }
   .header.light .search .search-btn {
     color: #323232; }
     .header.light .search .search-btn:hover {
@@ -14590,28 +14590,28 @@ canvas {
 
 @font-face {
   font-family: "Gotham";
-  src: url("/fonts/Gotham-Bold.otf") format("opentype");
+  src: url("../fonts/Gotham-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: auto; }
 
 @font-face {
   font-family: "Gotham";
-  src: url("/fonts/Gotham-Book.otf") format("opentype");
+  src: url("../fonts/Gotham-Book.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: auto; }
 
 @font-face {
   font-family: "Gotham";
-  src: url("/fonts/Gotham-Medium.otf") format("opentype");
+  src: url("../fonts/Gotham-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: auto; }
 
 @font-face {
   font-family: "Gotham";
-  src: url("/fonts/Gotham-Light.otf") format("opentype");
+  src: url("../fonts/Gotham-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: auto; }
