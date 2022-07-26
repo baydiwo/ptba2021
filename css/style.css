@@ -6382,7 +6382,7 @@ section:nth-child(odd) .title-effect.dark::before {
     .header.light .search-cart i.icon:hover {
       color: #009444; }
   .header.light .mega-menu.desktopTopFixed .menu-list-items {
-    background: #0E0E0E; }
+    background: #12326F; }
   .header.light .search .search-btn {
     color: #323232; }
     .header.light .search .search-btn:hover {
@@ -14972,7 +14972,7 @@ canvas {
         padding: 0;
         position: relative; }
         .list-category ul li a:hover {
-          color: #FFC40C; }
+          color: #12326F; }
         .list-category ul li a:after {
           content: '';
           position: absolute;
