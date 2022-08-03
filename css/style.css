@@ -3542,7 +3542,8 @@ ul.page-breadcrumb-2 {
   z-index: 10;
   width: auto;
   padding: 20px 45px;
-  background: #ffffff; }
+  background: #ffffff;
+  border-radius: 15px 15px 0 0; }
   ul.page-breadcrumb-2 li {
     position: relative; }
     ul.page-breadcrumb-2 li a {
@@ -6382,7 +6383,7 @@ section:nth-child(odd) .title-effect.dark::before {
     .header.light .search-cart i.icon:hover {
       color: #009444; }
   .header.light .mega-menu.desktopTopFixed .menu-list-items {
-    background: #12326F; }
+    background: #0E0E0E; }
   .header.light .search .search-btn {
     color: #323232; }
     .header.light .search .search-btn:hover {
@@ -14965,14 +14966,14 @@ canvas {
       margin: 0 15px 0;
       cursor: pointer; }
       .list-category ul li a {
-        color: #12326F;
+        color: #0E0E0E;
         display: block;
         font-weight: 700;
         font-size: 18px;
         padding: 0;
         position: relative; }
         .list-category ul li a:hover {
-          color: #12326F; }
+          color: #0E0E0E; }
         .list-category ul li a:after {
           content: '';
           position: absolute;
@@ -14980,7 +14981,7 @@ canvas {
           left: 0;
           width: 100%;
           height: 2px;
-          background-color: #12326F; }
+          background-color: #0E0E0E; }
 
 .text-column-2 {
   columns: auto 2; }
